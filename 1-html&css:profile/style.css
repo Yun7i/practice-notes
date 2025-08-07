@@ -38,3 +38,20 @@ header h1{
     text-decoration: none;
     font-weight: 600;
 }
+
+.nav-list a:hover,
+.nav-list a:focus{
+    outline-offset: 2px;
+    outline-color: #0077cc;
+    outline-style: solid;
+    /* ux 无障碍 */
+}
+
+.hero{
+    background-color: #e0eaff;
+    padding:2rem  1rem;
+    /* shangxia zuoyou */
+    margin-top: 1rem;
+    text-align: center;
+    border-radius: 8px;
+}
