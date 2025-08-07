@@ -10,5 +10,31 @@ body{
     background-color: #f8f8f8;
     color:#333;
     /* color ratio */
-    
+    padding: 1 rem;
+    /* rem 相对根元素（html）的root，相对于font size来计算的，是个相对单位；pixel太精确，这里不用 */
+}
+
+header{
+    background-color: #222;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1{
+    margin-bottom: 0.5rem,;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap:1rem;
+    /* 每个元素之间会有1rem的margin */
+}
+
+.nav-list a{
+    color:#fff;
+    text-decoration: none;
+    font-weight: 600;
 }
