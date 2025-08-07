@@ -1,0 +1,14 @@
+*{
+    margin:0;
+    padding:0;
+    /* 有的浏览器自带margin和padding，先去掉 */
+    box-sizing:border-box;
+    /* 不要撑开盒子 */
+}
+
+body{
+    background-color: #f8f8f8;
+    color:#333;
+    /* color ratio */
+    
+}
