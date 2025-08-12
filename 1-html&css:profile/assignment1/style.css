@@ -13,10 +13,9 @@ body {
   font-family: 'Press Start 2P', monospace;
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* 顶部对齐 */
+  align-items: flex-start; 
   height: 100vh;
-  padding: 2rem 1rem 1rem;
-  box-sizing: border-box;
+  padding: 2rem;
   background-image:
     linear-gradient(90deg, #222 1px, transparent 1px),
     linear-gradient(#222 1px, transparent 1px);
@@ -26,7 +25,7 @@ body {
 
 
 .window {
-  background-color: #fff;
+  background-color: #f8f8f8;
   border: 3px solid #222;
   box-shadow: 5px 5px 0 #333;
   padding: 2.5rem;
@@ -45,19 +44,23 @@ h1 {
 
 h3{
     font-size: 16px;
-    margin-top: 1rem;
+    margin-top: 2rem;
+    text-decoration-line: underline;
 }
 
 label {
-  font-size: 12px;
+  font-size: 14px;
   display: block;
   margin-top: 1rem;
-  cursor: pointer;         /* 鼠标变手形，更友好 */
+  cursor: pointer;
 }
 
-input:not([type="checkbox"]):not([type="radio"]) {
+input:not([type="checkbox"]):not([type="radio"]),
+textarea,
+select
+{
   width: 90%;
-  padding: 5px;
+  padding: 1rem;
   border: 2px solid #222;
   background: #fff;
   font-family: 'Press Start 2P', monospace;
@@ -95,8 +98,17 @@ option {
     font-size: 12px;
 }
 
+select {
+  appearance: none; /* 去掉浏览器默认箭头 */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'><path d='M0 0 L5 5 L10 0 Z' fill='black'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 10px 10px;
+}
+
+
 button {
-  margin-top: 3rem;
+  margin-top: 3.5rem;
   width: 90%;
   padding: 8px;
   border: 2px solid #222;
