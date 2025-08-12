@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="window">
+  <h1>Sign Up</h1>
+  <section class="basicInfo">
+    <h3>Please enter your basic info</h3>
+    <form>
+        <label for="firstName">Firstname</label>
+        <input type="text" id="fisrtName" name="firstName" placeholder="Please enter your first name">
+
+        <label for="lastName">Lastname</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Please enter your last name">
+
+        <label for="email">Email address</label>
+        <input type="text" id="email" name="email" placeholder="Please enter your email">
     
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Please enter password">
+
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="condirmPassword" placeholder="Please re-enter password">
+    </form>
+  </section>
+  <section class="otherDetails">
+    <form>
+        <h3>Please enter your other details</h3>
+        <label></label>
+        <input>
+
+    </form>
+
+  </section>
+  <section class="submit">
+    <form>
+        <p>I'm accepting Terms and Conditions</p>
+    </form>
+    <button type="submit" id="signUp">Sigh Up</button>
+  </section>
+</div>
 </body>
 </html>
