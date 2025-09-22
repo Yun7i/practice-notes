@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form>
+<div class="window">
+  <h1>Sign Up</h1>
+  <section class="basic-info">
+    <h3>Please enter your basic info</h3>
+        <label for="firstName">First name</label>
+        <input type="text" id="firsttName" name="firstName" placeholder="Please enter your first name" aria-describedby="firstNameHelp" required>
+
+        <label for="lastName">Last name</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Please enter your last name" required>
+
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" placeholder="Please enter your email" required>
+    
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Please enter password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$" 
+       title="密码至少8位，包含大写字母、小写字母、数字和特殊字符" required>
+
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Please re-enter password" required>
+  </section>
+  <section class="otherDetails">
+        <h3>We'd like to know more about you</h3>
+        
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob">
+
+        <label>Gender</label>
+        <div class="gender-options">
+            <label><input type="radio" name="gender" value="Female">Female</label>
+            <label><input type="radio" name="gender" value="Male">Male</label>
+            <label><input type="radio" name="gender" value="Non-binary">Non-binary</label>
+            <label><input type="radio" name="gender" value="Other">Other</label>
+        </div>
+        <label for="about">About Me</label>
+        <textarea id="about" name="about" placeholder="Tell us about yourself..." rows="4"></textarea>
+
+        <label for="profession">Choose Your Profession </label>
+        <select id="profession" name="profession">
+            <option value="">--Select--</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Data Analytics">Data Analytics</option>
+            <option value="UI/UX Design">UI/UX Design</option>
+            <option value="Other">Other</option>
+        </select>
+  </section>
+  <section class="submit">
+    <label for="consent">
+        <input type="checkbox" name="terms"/> I accept the <a href="/terms">Terms and Conditions</a>.
+    </label>
+    <button type="submit" id="signUp">Sign Up</button>
+  </section>
+</div>
+</form>
+</body>
+</html>

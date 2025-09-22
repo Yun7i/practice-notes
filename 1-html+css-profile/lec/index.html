@@ -1,0 +1,85 @@
+<!-- senmantic a11y seo -->
+<!DOCTYPE html>
+<!-- 当前页面采用html5来显示网页，必须在第一行，文档类型声明标签  -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- UTF-8 是万国码，必须写，不写会乱码 -->
+    <!-- GB2312 简体中文 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 必须要写，不然适配屏幕有问题，responsive效果不来 -->
+    <title>Profile</title>
+    <!-- tab上写的内容 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tech Gear</h1>
+        <nav aria-lab = "Main navigation">
+            <ur class="nav-list">
+                <li><a href="#product">Product</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ur>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2> Inovative  </h2>
+            <p> Explore our larges range of tech gear designed for performance and style.</p>
+            <!-- p 标签 有空隙，自动换行 -->
+        </section>
+        <section id="product" class="product" aria-label="Product list">
+            <h2>Our Product</h2>
+            <div class = "product-grid">
+                <!-- 语义化标签， card 用article -->
+                <article class="card">
+                    <!-- img的alt对accessibility和seo都有好处  -->
+                    <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Wireless Headphones" />
+                    <h3>Wireless Headphones</h3>
+                    <p>High-quality sound with noise cancellation.</p>
+                    <button type="button" aria-label="buy wireless headphones"> Buy Now</button>
+                </article>
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=300&q=80" alt="Smart Watch" />
+                    <h3>Smart Watch</h3>
+                    <p>Track your health and stay connected on the go.</p>
+                    <button type="button" aria-label="buy smart watch"> Buy Now</button>
+                </article>
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=300&q=80" alt="Portable Speaker" />
+                    <h3>Portable Speaker</h3>
+                    <p>Crystal clear sound in a compact design.</p>
+                    <button type="button" aria-label="buy portable speaker"> Buy Now</button>
+                </article>
+            </div>
+
+        </section>
+        <section id="about" class="about" aria-label ="about tech gear">
+            <h2>About</h2>
+            <p>We are passionate about creating innovative tech products that enhance your lifestyle.</p>
+        </section>
+        <section id="contact" class="contact" aria-label="get in touch">
+            <h2>Get in touch</h2>
+            <p>have questions or need to contac us?</p>
+            <form class="contact-form" aria-label="contact form">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name"></input>
+                <!-- label里的for和input的id一致 -->
+                 <div>
+                    <label for="male">Male</label>
+                    <input type="radio" value="male" name="gender" id="male" />
+                    <label for="female">Female</label>
+                    <input type="radio" value="female" name="gender" id="female">
+                 </div>
+                <label for="message">Message</label>
+                <textarea name="message" id="message"></textarea>
+                <button type="submit">Send Message</button>
+            </form> 
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Tech Gear. All rights reserved.</p>
+    </footer>
+</body>
+</html>
